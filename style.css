@@ -1,0 +1,168 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{
+    font-family: 'Righteous', cursive;
+}
+
+:root{
+    --blue: #1566C0;
+}
+
+.text-blue{
+    color: var(--blue);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.border-blue{
+    border: 5px solid var(--blue);
+}
+
+.header-img {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent, rgba(0, 0, 0, 0.9)), url(media/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.svg {
+    z-index: 2;
+}
+
+.spazio {
+    bottom: 10px;
+}
+
+main{
+    margin-top: 40px;
+
+}
+
+.margin-10{
+    margin-top: 100px;
+}
+.card{
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    
+}
+
+.underline {
+    height: 4px;
+    margin-top: 6px;
+    
+}
+
+.in-middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1200px ) and (min-width: 992px) {
+    .in-middle{
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+    
+    }
+  }
+  .img_op {
+    object-fit: cover;
+    opacity: 0.2;
+ }
+
+
+ .par{
+     font-size: 13px;
+     position: relative;
+ }
+
+ .width-carta1 {
+    width: 45%;
+  }
+
+  .width-carta2 {
+    width: 25%
+  }
+
+  .margine-seconda-row {
+    margin-top: 120px;
+  }
+
+  .width-carta3 {
+    width: 70%;
+  }
+
+  .bor-right{
+      border-right: 2px solid var(--blue);
+      
+  }
+ 
+  .bor-left{
+    border-left: 2px solid var(--blue);
+  }
+
+  .textr {
+    text-align: right; 
+    display:block;
+}
+.circle-r{
+    position: relative;
+}
+.circle-r::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    position: absolute; 
+    top:0px;
+    left: calc(100% - 7px)
+}
+
+.circle-l{
+    position: relative;
+}
+.circle-l::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    position: absolute; 
+    top:0px;
+    right: calc(100% - 9px)
+}
+
+@media screen and (max-width:768px){
+    .bor-left{
+        border-left: 2px solid white;
+    }
+    .bor-right{
+        border-right: 2px solid white;
+    }
+    .circle-r::after{
+        display: none;
+    }
+    .circle-l::before{
+        display: none;
+    }
+
+}
+
+.footer-img {
+    height: 80vh;
+    background-image: linear-gradient( rgba(255, 255, 255, 3), transparent, rgba(0, 0, 0, 3)), url(media/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
